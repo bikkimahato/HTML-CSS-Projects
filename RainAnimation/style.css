@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(backrain.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.rain{
+	height: 100vh;
+	background: url(rain.png);
+	animation: AniRain .3s linear infinite;
+}
+.rain::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	animation: light 3s linear infinite;
+	opacity: 0;
+}
+@keyframes AniRain{
+	0%{
+		background-position: 0% 0%;
+	}
+	100%{
+		background-position: 20% 100%;
+	}
+}
+@keyframes light{
+	0% { opacity: 1; } 
+	10%{ opacity: 0; } 
+	11%{ opacity: 0; } 
+	14%{ opacity: 1; } 
+	20%{ opacity: 0; } 
+	21%{ opacity: 0; } 
+	24%{ opacity: 1; } 
+	30% { opacity: 0; } 
+	100%{ opacity: 0; }
+}
