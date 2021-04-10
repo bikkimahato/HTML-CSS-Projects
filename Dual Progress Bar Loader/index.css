@@ -1,0 +1,23 @@
+body {
+  background: #000;
+}
+
+.loader, .progress {
+  width: 500px;
+  height: 30px;
+  background: #00422357;
+  border-radius: 99909px;
+  margin: 50vh auto 0;
+}
+
+.progress {
+  width: 0;
+  background: #00ffd7;
+  animation: 2.5s progress linear infinite;
+}
+
+@keyframes progress {
+  to {
+    width: 500px;
+  }
+}
