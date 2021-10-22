@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #262626;
+}
+
+a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  color: #262626;
+  background: #ff0;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  box-shadow: 0 0 0 5px #262626, 0 0 0 10px #ff0;
+  transition: 0.5s cubic-bezier(0.52, 1.65, 1, 1.31);
+}
+
+a:hover {
+  letter-spacing: 10px;
+  box-shadow: 0 0 0 3px #262626, 0 0 0 8px #ff0;
+  transform: translate(-50%, -50%) scaleY(0.9);
+}
